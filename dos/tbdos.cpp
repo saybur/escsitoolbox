@@ -165,7 +165,7 @@ static int FindFilenameInList(const WCValOrderedVector<ToolboxFileEntry> &files,
 {
     for (int i = 0; i < files.entries(); i++) {
         const ToolboxFileEntry &tfe = files[i];
-        if (strncasecmp(tfe.name, searchname, sizeof(tfe.name) - 1) == 0) {
+        if (strncasecmp(tfe.name, searchname, strlen(searchname)) == 0) {
             printf("Selected file %d: %s\n", tfe.index, tfe.name);
             return tfe.index;
         }
