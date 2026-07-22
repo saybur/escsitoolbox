@@ -605,7 +605,7 @@ static void PrintHelp(void)
         "  debug <dev> [flag]      Show or set device firmware debug flag.\n"
         "  lsimg <dev>             List available images for the given device.\n"
         "  setimg <dev> <img>      Change the mounted image in the given device, to\n"
-        "                          the image with the given index or filename.\n"
+        "                          the image with the given index or partial filename.\n"
         "  lsdir <dev>             List shared directory for the given decice.\n"
         "  get <dev> <file> [name] Download a file from the shared directory.\n"
         "  put <dev> <filename>    Upload a file to the shared directory.\n"
